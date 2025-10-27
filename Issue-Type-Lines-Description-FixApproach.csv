@@ -1,0 +1,16 @@
+Issue,Type,Line(s),Description,Fix Approach
+Bare Except Block (B110),Low Severity,12-17,Bare try-except-pass detected,Added specific exception handling (KeyError, ValueError) with error message
+Dangerous eval() Usage (B307),Medium Severity,51,Use of insecure eval() function,Removed eval() function call entirely
+Unused import (F401),Import Error,2,Unused 'logging' import,Removed unused import
+Missing Function Spacing (E302),Formatting,Multiple (8, 16, 25, etc.),Missing blank lines between functions,Added two blank lines between all functions
+Bare Except Clause (E722),Exception,12-17,Bare 'except' clause,Added specific exception types
+Missing Post-Function Spacing (E305),Formatting,54-56,Missing blank lines after function,Added proper spacing after functions
+Missing Module Docstring (C0114),Documentation,Module Start (1-3),Missing module docstring,Added comprehensive module docstring
+Missing Function Docstrings (C0116),Documentation,Multiple(8,16, 25, 31, 37, 42, 47, 54),Missing function docstrings,Added detailed docstrings for all functions
+Invalid Function Names (C0103),Naming,Multiple (8,16,25, 28, 34, 39, 44, 51),Non-snake_case function names,Renamed all functions to follow snake_case convention (e.g., addItem → add_item)
+Mutable Default Argument (W0102),Warning,8,Dangerous default value [],Changed mutable default argument to None with initialization in function
+Old-Style String Formatting (C0209),Style,14,Old-style string formatting,Replaced with f-strings
+Bare Except Clause (W0702),Warning,12-17,Bare except clause,Added specific exception handling
+Missing File Encoding (W1514),Warning,29,34,No encoding specified in open(),Added UTF-8 encoding to all file operations
+Missing Context Manager (R1732),Refactor,29,34,Not using 'with' for files,Implemented context managers (with statements) for file operations
+Dangerous eval() Usage (W0123),Security,51,Use of eval() function,Removed eval() function
